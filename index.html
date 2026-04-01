@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EAZ Việt Nam - Tuyển dụng</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-surface": "#4a2506",
+                        "background": "#fff4ef",
+                        "secondary-container": "#e2e2e5",
+                        "on-tertiary-container": "#006458",
+                        "surface-bright": "#fff4ef",
+                        "on-primary-fixed": "#000000",
+                        "tertiary": "#00675b",
+                        "surface-variant": "#ffd4b9",
+                        "surface-container-highest": "#ffd4b9",
+                        "tertiary-fixed-dim": "#9cefde",
+                        "primary": "#9c3f00",
+                        "tertiary-dim": "#005a4f",
+                        "tertiary-container": "#aafeec",
+                        "on-primary": "#fff0ea",
+                        "primary-fixed": "#ff7a2f",
+                        "on-surface-variant": "#7f512e",
+                        "on-secondary-fixed-variant": "#5a5c5e",
+                        "primary-dim": "#893600",
+                        "inverse-surface": "#1c0900",
+                        "on-tertiary": "#c1fff1",
+                        "outline-variant": "#dba078",
+                        "surface-dim": "#ffc9a6",
+                        "error-dim": "#b92902",
+                        "on-tertiary-fixed": "#005046",
+                        "on-primary-container": "#401500",
+                        "error": "#b02500",
+                        "secondary-fixed-dim": "#d4d4d7",
+                        "secondary": "#5a5c5e",
+                        "on-error-container": "#520c00",
+                        "on-error": "#ffefec",
+                        "outline": "#9e6b47",
+                        "primary-container": "#ff7a2f",
+                        "surface-container-low": "#ffede4",
+                        "primary-fixed-dim": "#f66700",
+                        "on-tertiary-fixed-variant": "#0b6f62",
+                        "secondary-dim": "#4e5052",
+                        "secondary-fixed": "#e2e2e5",
+                        "on-background": "#4a2506",
+                        "inverse-primary": "#fe6b00",
+                        "surface-container": "#ffe3d2",
+                        "surface": "#fff4ef",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#f2f2f5",
+                        "tertiary-fixed": "#aafeec",
+                        "on-primary-fixed-variant": "#4f1c00",
+                        "inverse-on-surface": "#c99169",
+                        "on-secondary-fixed": "#3e3f42",
+                        "surface-container-high": "#ffdcc6",
+                        "error-container": "#f95630",
+                        "surface-tint": "#9c3f00",
+                        "on-secondary-container": "#505254"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Be Vietnam Pro"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .kinetic-pulse {
+            background: linear-gradient(135deg, #9c3f00 0%, #ff7a2f 100%);
+        }
+        .glass-nav {
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fff4ef]/70 dark:bg-[#4a2506]/70 backdrop-blur-xl">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black text-[#9c3f00] dark:text-[#ff7a2f] tracking-tighter font-headline">
+                EAZ Việt Nam
+            </div>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex items-center space-gap-8 gap-8 font-['Plus_Jakarta_Sans'] font-semibold tracking-tight">
+<a class="text-[#7f512e] dark:text-[#dba078] hover:text-[#9c3f00] transition-colors duration-300" href="#about">Về chúng tôi</a>
+<a class="text-[#9c3f00] dark:text-[#ff7a2f] border-b-2 border-[#9c3f00] pb-1" href="#jobs">Vị trí tuyển dụng</a>
+<a class="text-[#7f512e] dark:text-[#dba078] hover:text-[#9c3f00] transition-colors duration-300" href="#process">Quy trình</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-bold scale-102 active:scale-95 transition-transform hover:shadow-lg">
+                    Ứng tuyển ngay
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative overflow-hidden px-8 py-20 lg:py-32 max-w-7xl mx-auto">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div class="relative z-10">
+<h1 class="font-headline text-5xl lg:text-7xl font-extrabold text-on-surface leading-[1.1] tracking-tight mb-6">
+                        Gia Nhập Đội Ngũ EAZ Việt Nam - <span class="text-primary italic">Kiến Tạo</span> Tương Lai Thương Mại Điện Tử
+                    </h1>
+<p class="text-on-surface-variant text-lg lg:text-xl max-w-xl mb-10 leading-relaxed">
+                        Chúng tôi không chỉ xây dựng một nền tảng mua sắm, chúng tôi đang kiến tạo một hệ sinh thái thương mại năng động, nơi mỗi cá nhân đều là một hạt nhân của sự sáng tạo.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<a class="kinetic-pulse text-on-primary px-8 py-4 rounded-full font-bold text-lg inline-flex items-center gap-2 transition-transform hover:scale-105 active:scale-95 shadow-xl shadow-primary/20" href="#jobs">
+                            Xem vị trí tuyển dụng
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+<a class="bg-surface-container-highest text-primary px-8 py-4 rounded-full font-bold text-lg hover:bg-surface-container-high transition-colors" href="#about">
+                            Tìm hiểu thêm
+                        </a>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -top-10 -right-10 w-64 h-64 bg-primary-container/20 rounded-full blur-3xl"></div>
+<div class="relative rounded-[2rem] overflow-hidden shadow-2xl transform lg:rotate-2 hover:rotate-0 transition-transform duration-500">
+<img alt="EAZ Team" class="w-full h-[500px] object-cover" data-alt="a diverse group of young professional colleagues collaborating in a bright modern workspace with warm natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzsOyBqqrFSfW_PBlRaPnxGbTo5l_noUjQ3Bgumira1lq3mM6Xi4OOSWItynmkBZRnkLOa1iOvjGWsBGXgo80Tf9CjCaJl33Sxi1LgCaPrsppr9FMxxCyMvz0VqFSTsTrUZnzcy_ZRqQ6nMv96wKdxdXlvZYjE9rAcAgjJwvogvSTU32nng9dIpAPPmAL2JKMgK5I4vP8GcnMeI2AZO4sK6UJ9sBPWEjFfU1-sSswHrI5czJUc0KXtp0lOS0e7Z51ab81so8eKFnU"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl flex items-center gap-4 max-w-xs transform -rotate-3">
+<div class="w-12 h-12 rounded-full bg-tertiary-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<p class="font-headline font-bold text-on-surface text-sm">Hơn 20+ vị trí đang mở rộng cửa đón chào bạn!</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Open Positions Section -->
+<section class="py-24 bg-surface-container-low" id="jobs">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<h2 class="font-headline text-primary text-sm font-black uppercase tracking-widest mb-3">Cơ hội nghề nghiệp</h2>
+<h3 class="font-headline text-4xl lg:text-5xl font-extrabold text-on-surface">Vị trí đang tuyển dụng</h3>
+</div>
+<p class="text-on-surface-variant max-w-md text-right hidden md:block">
+                        Khám phá những cơ hội mới để bứt phá giới hạn và phát triển sự nghiệp tại môi trường thương mại điện tử hàng đầu.
+                    </p>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<!-- Job Card: Livestreamer -->
+<div class="group bg-surface-container-lowest p-8 rounded-[2rem] hover:bg-surface-container-highest transition-all duration-300 flex flex-col justify-between border border-transparent hover:border-outline-variant/15">
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="bg-tertiary/10 text-tertiary px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">Mới nhất</span>
+<span class="material-symbols-outlined text-primary-container text-4xl group-hover:scale-110 transition-transform">live_tv</span>
+</div>
+<h4 class="font-headline text-2xl font-extrabold text-on-surface mb-3">Livestreamer</h4>
+<p class="text-on-surface-variant leading-relaxed mb-8">
+                                Sáng tạo nội dung trực tiếp trên các nền tảng thương mại điện tử lớn. Bạn sẽ là gương mặt đại diện, kết nối sản phẩm với hàng triệu khách hàng qua những phiên live đầy năng lượng.
+                            </p>
+</div>
+<div class="flex items-center justify-between pt-6 border-t border-outline-variant/10">
+<div class="flex gap-4">
+<span class="flex items-center gap-1 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">location_on</span> HCM
+                                </span>
+<span class="flex items-center gap-1 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">schedule</span> Full-time
+                                </span>
+</div>
+<button class="text-primary font-bold flex items-center gap-2 group/btn">
+                                Chi tiết <span class="material-symbols-outlined group-hover/btn:translate-x-1 transition-transform">arrow_right_alt</span>
+</button>
+</div>
+</div>
+<!-- Job Card: Creator Management -->
+<div class="group bg-surface-container-lowest p-8 rounded-[2rem] hover:bg-surface-container-highest transition-all duration-300 flex flex-col justify-between border border-transparent hover:border-outline-variant/15">
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="bg-primary/10 text-primary px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">Hot Job</span>
+<span class="material-symbols-outlined text-primary-container text-4xl group-hover:scale-110 transition-transform">group_work</span>
+</div>
+<h4 class="font-headline text-2xl font-extrabold text-on-surface mb-3">Creator Management</h4>
+<p class="text-on-surface-variant leading-relaxed mb-8">
+                                Quản lý và định hướng sự phát triển cho các nhà sáng tạo nội dung của EAZ. Xây dựng chiến lược thương hiệu cá nhân và tối ưu hóa hiệu suất truyền thông.
+                            </p>
+</div>
+<div class="flex items-center justify-between pt-6 border-t border-outline-variant/10">
+<div class="flex gap-4">
+<span class="flex items-center gap-1 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">location_on</span> HCM
+                                </span>
+<span class="flex items-center gap-1 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">schedule</span> Full-time
+                                </span>
+</div>
+<button class="text-primary font-bold flex items-center gap-2 group/btn">
+                                Chi tiết <span class="material-symbols-outlined group-hover/btn:translate-x-1 transition-transform">arrow_right_alt</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose EAZ Section (Bento Grid) -->
+<section class="py-24 px-8 max-w-7xl mx-auto" id="about">
+<div class="text-center mb-16">
+<h2 class="font-headline text-4xl lg:text-5xl font-extrabold text-on-surface mb-4">Tại sao chọn EAZ Việt Nam?</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Nơi đam mê hội tụ và tài năng được tỏa sáng trong môi trường làm việc lý tưởng.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="md:col-span-2 bg-surface-container p-10 rounded-[2.5rem] flex flex-col justify-between relative overflow-hidden group">
+<div class="relative z-10">
+<div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-primary mb-6 shadow-sm">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<h4 class="font-headline text-3xl font-bold text-on-surface mb-4">Môi trường Năng động</h4>
+<p class="text-on-surface-variant text-lg max-w-md">Làm việc trong không gian mở, thúc đẩy sự tương tác và tinh thần teamwork không giới hạn.</p>
+</div>
+<img alt="Dynamics" class="absolute right-0 bottom-0 w-1/2 h-full object-cover mix-blend-overlay opacity-20 transition-transform duration-700 group-hover:scale-110" data-alt="blurred office background with warm lighting and modern furniture providing a cozy and energetic workspace feeling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAabAeBV3Ewm2dBGKqlJYkhKZEcflYUeV2cs2iV6WeD_HDiMFUe2IHk419bW3_3ll4Bt3_rzmMyzm_AfYmgpH42hQkCwCEGl_Pgb0nDxK4HCrJjcWhquDF3O8_nMNHUKLqL1wHAONv46gtH6gmHX9nynceM-WG3RRNFRe3avPioQ5CcU9ptyUNikkK24ejdl6qIDoHZQI_Bm-gR9oJpK-y_MY_Cof3iEfc3Q9vqtyYp_YUzT3mOyOqwt8FBKopbVhFyy2sEqnhgqk4"/>
+</div>
+<div class="bg-primary p-10 rounded-[2.5rem] text-on-primary flex flex-col justify-center">
+<div class="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center text-white mb-6">
+<span class="material-symbols-outlined text-3xl">psychology</span>
+</div>
+<h4 class="font-headline text-2xl font-bold mb-4">Sáng tạo không ngừng</h4>
+<p class="opacity-90">Chúng tôi tôn trọng mọi ý tưởng khác biệt và khuyến khích bạn thử nghiệm những điều mới mẻ mỗi ngày.</p>
+</div>
+<div class="md:col-span-3 bg-surface-container-high p-10 rounded-[2.5rem] flex flex-col md:flex-row items-center gap-10">
+<div class="flex-1">
+<div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-primary mb-6 shadow-sm">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<h4 class="font-headline text-3xl font-bold text-on-surface mb-4">Chế độ Đãi ngộ tốt</h4>
+<p class="text-on-surface-variant text-lg">Lương thưởng cạnh tranh, bảo hiểm cao cấp và những chuyến du lịch "teambuilding" chuẩn 5 sao đang chờ bạn.</p>
+</div>
+<div class="flex-1 grid grid-cols-2 gap-4">
+<div class="bg-white/50 p-6 rounded-2xl text-center">
+<p class="text-3xl font-black text-primary mb-1">13+</p>
+<p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Tháng lương</p>
+</div>
+<div class="bg-white/50 p-6 rounded-2xl text-center">
+<p class="text-3xl font-black text-primary mb-1">Premium</p>
+<p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Bảo hiểm</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Recruitment Process -->
+<section class="py-24 bg-surface-container-lowest" id="process">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-20">
+<h2 class="font-headline text-4xl lg:text-5xl font-extrabold text-on-surface mb-4">Quy trình tuyển dụng</h2>
+<p class="text-on-surface-variant">Đơn giản, minh bạch và tôn trọng ứng viên.</p>
+</div>
+<div class="relative">
+<!-- Connector Line (Hidden on mobile) -->
+<div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-outline-variant/20 -translate-y-1/2"></div>
+<div class="grid md:grid-cols-3 gap-12 relative z-10">
+<!-- Step 1 -->
+<div class="bg-surface-container p-8 rounded-[2rem] text-center transform transition-transform hover:-translate-y-2">
+<div class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center text-2xl font-black font-headline mx-auto mb-6 shadow-xl shadow-primary/20">1</div>
+<h5 class="font-headline text-xl font-bold mb-3">Nộp hồ sơ</h5>
+<p class="text-on-surface-variant text-sm">Gửi CV và Portfolio ấn tượng của bạn qua cổng ứng tuyển trực tuyến.</p>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container p-8 rounded-[2rem] text-center transform transition-transform hover:-translate-y-2">
+<div class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center text-2xl font-black font-headline mx-auto mb-6 shadow-xl shadow-primary/20">2</div>
+<h5 class="font-headline text-xl font-bold mb-3">Phỏng vấn</h5>
+<p class="text-on-surface-variant text-sm">Gặp gỡ và trao đổi trực tiếp với đội ngũ chuyên môn của EAZ.</p>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container p-8 rounded-[2rem] text-center transform transition-transform hover:-translate-y-2">
+<div class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center text-2xl font-black font-headline mx-auto mb-6 shadow-xl shadow-primary/20">3</div>
+<h5 class="font-headline text-xl font-bold mb-3">Thử việc</h5>
+<p class="text-on-surface-variant text-sm">Trải nghiệm môi trường thực tế và bắt đầu hành trình của bạn.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-20 px-8">
+<div class="max-w-5xl mx-auto kinetic-pulse rounded-[3rem] p-12 lg:p-20 text-center text-on-primary relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 100 100">
+<path d="M0 0 L100 100 M100 0 L0 100" stroke="currentColor" stroke-width="0.5"></path>
+</svg>
+</div>
+<div class="relative z-10">
+<h2 class="font-headline text-4xl lg:text-5xl font-black mb-6">Bạn đã sẵn sàng cùng EAZ cất cánh?</h2>
+<p class="text-xl mb-10 opacity-90 max-w-2xl mx-auto">Đừng để lỡ cơ hội trở thành một phần của cuộc cách mạng thương mại điện tử tiếp theo.</p>
+<button class="bg-white text-primary px-10 py-5 rounded-full font-black text-xl hover:shadow-2xl transition-all hover:scale-105 active:scale-95">
+                        Ứng tuyển ngay bây giờ
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 bg-[#ffe3d2] dark:bg-[#2d1604] border-t border-[#dba078]/20 font-['Be_Vietnam_Pro'] text-sm">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="text-xl font-bold text-[#4a2506] dark:text-[#fff4ef]">EAZ Việt Nam</div>
+<p class="text-[#7f512e] leading-relaxed">
+                    Địa chỉ văn phòng: Tòa nhà EAZ, Khu Công nghệ cao, Quận 9, TP. Hồ Chí Minh.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-white/50 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">social_leaderboard</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-white/50 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">link</span>
+</a>
+</div>
+</div>
+<div>
+<h6 class="font-bold text-[#9c3f00] mb-6 uppercase tracking-wider">Liên kết hữu ích</h6>
+<ul class="space-y-4">
+<li><a class="text-[#7f512e] hover:underline decoration-[#ff7a2f] underline-offset-4 transition-opacity opacity-80 hover:opacity-100" href="#">Liên hệ</a></li>
+<li><a class="text-[#7f512e] hover:underline decoration-[#ff7a2f] underline-offset-4 transition-opacity opacity-80 hover:opacity-100" href="#">Chính sách bảo mật</a></li>
+<li><a class="text-[#7f512e] hover:underline decoration-[#ff7a2f] underline-offset-4 transition-opacity opacity-80 hover:opacity-100" href="#">Điều khoản sử dụng</a></li>
+</ul>
+</div>
+<div>
+<h6 class="font-bold text-[#9c3f00] mb-6 uppercase tracking-wider">Đăng ký bản tin</h6>
+<p class="text-[#7f512e] mb-4">Cập nhật những vị trí tuyển dụng mới nhất qua email.</p>
+<div class="flex gap-2">
+<input class="flex-1 bg-white border-none rounded-full px-4 py-2 text-sm focus:ring-2 focus:ring-primary/50 outline-none" placeholder="Email của bạn" type="email"/>
+<button class="bg-primary text-on-primary w-10 h-10 rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="mt-12 pt-8 border-t border-[#dba078]/10 text-center text-[#7f512e]/60">
+            © 2024 EAZ Việt Nam. Chuyển động cùng kỷ nguyên số.
+        </div>
+</footer>
+</body></html>
